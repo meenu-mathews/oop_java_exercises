@@ -1,22 +1,12 @@
 package com.techreturners.cats;
 
-public class DomesticCat extends AbstractCat implements Cat {
-    int catHeight = 23;
-    String catSetting = "domestic";
-    String catEaten = "Purrrrrrr";
-
-    @Override
-    public String getSetting() {
-        return catSetting;
+public class DomesticCat extends AbstractCat{
+    public DomesticCat() {
+        super(23, "domestic", "Purrrrrrr");
     }
 
-    @Override
-    public int getAverageHeight() {
-        return catHeight;
-    }
-
-    @Override
+    /*@Override
     public String eat() {
-        return catEaten;
-    }
+        return "It will do I suppose";
+    }*/
 }
